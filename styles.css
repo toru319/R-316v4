@@ -1,0 +1,134 @@
+/* カスタムスタイル */
+
+/* グローバル設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f7f0fa, #fff);
+    color: #333;
+}
+
+/* ヘッダースタイル */
+.navbar {
+    background-color: #fce4ec;
+    border-bottom: 3px solid #f8bbd0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #e91e63;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f50057;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.logo-img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* イントロセクションスタイル */
+.intro h1 {
+    font-family: 'Comic Sans MS', cursive;
+    color: #ff4081;
+}
+
+.intro .lead {
+    font-family: 'Comic Sans MS', cursive;
+    color: #ff80ab;
+    font-size: 1.5em;
+}
+
+#days-count {
+    font-weight: bold;
+    color: #f50057;
+    font-size: 1.2em;
+    background-color: #fce4ec;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* スライドショースタイル */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* セクションスタイル */
+#notifications, #content {
+    background-color: #ffffff;
+    border: 2px solid #ff80ab;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#notifications h2, #content h2 {
+    font-family: 'Comic Sans MS', cursive;
+    color: #e91e63;
+}
+
+/* カードスタイル */
+.card {
+    background-color: #fce4ec;
+    border: 2px solid #ff80ab;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ボタンスタイル */
+.btn-outline-primary {
+    color: #e91e63;
+    border-color: #e91e63;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #e91e63;
+    border-color: #e91e63;
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #f8bbd0;
+    color: #ffffff;
+    border-top: 3px solid #f48fb1;
+}
+
+/* ローディング画面のスタイル */
+#loading-screen {
+    z-index: 9999;
+}
+
+.loading-animation .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ffb6c1;
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+}
+
+/* ローディング終了後の表示制御 */
+body.loaded #loading-screen {
+    display: none !important;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2em;
+    }
+    .intro .lead {
+        font-size: 1.2em;
+    }
+}

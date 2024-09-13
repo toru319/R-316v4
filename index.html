@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R316</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ローディング画面 -->
+    <div id="loading-screen" class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex flex-column justify-content-center align-items-center">
+        <div class="loading-animation">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="loading-percentage mt-3">0%</div>
+    </div>
+
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="522764149110079954.jpg" alt="R316 Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#notifications">お知らせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content">コンテンツ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main id="main-content" class="container mt-4" style="display: none;">
+        <!-- イントロセクション -->
+        <section class="intro row">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h1 class="display-4">Welcome to R316!</h1>
+                <p class="lead">2人が出会ってから <span id="days-count"></span> 日目</p>
+            </div>
+            <div class="col-md-8">
+                <!-- スライドショー -->
+                <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="IMG_8945.JPG" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG_9496.JPG" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG_9680.JPG" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/toru319/Two-Year-Anniversary/blob/main/写真/2023-04-18_08-34-26_527.jpeg?raw=true" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/toru319/Two-Year-Anniversary/blob/main/写真/2023-05-05_21-28-30_946.jpeg?raw=true" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/toru319/Two-Year-Anniversary/blob/main/写真/2023-05-05_21-28-34_540.jpeg?raw=true" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/toru319/Two-Year-Anniversary/blob/main/写真/2023-05-05_21-28-57_888.jpeg?raw=true" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/toru319/Two-Year-Anniversary/blob/main/写真/2023-05-05_21-29-15_255.jpeg?raw=true" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お知らせセクション -->
+        <section id="notifications" class="mt-5">
+            <h2 class="mb-4">お知らせ</h2>
+            <ul class="list-group">
+                <li class="list-group-item">2024-09-05: R-Tripが更新されました。</li>
+                <li class="list-group-item">2024-09-04: R-Tripがリリースされました。</li>
+                <li class="list-group-item">2024-09-03: R316をリリース。</li>
+                <li class="list-group-item">2024-09-02: 先輩がバイト入れすぎてれみちゃんに怒られる。</li>
+                <li class="list-group-item">2024-09-01: ルミエールデート。</li>
+            </ul>
+            <div class="text-end mt-3">
+                <a href="notifications.html" class="btn btn-outline-primary">一覧を見る</a>
+            </div>
+        </section>
+
+        <!-- コンテンツセクション -->
+        <section id="content" class="mt-5">
+            <h2 class="mb-4">コンテンツ</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">R-Quest</h5>
+                            <a href="https://toru319.github.io/R-Quest/" class="btn btn-primary">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">R-Anniversary</h5>
+                            <a href="https://toru319.github.io/Two-Year-Anniversary/" class="btn btn-primary">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">R-Trip</h5>
+                            <a href="https://toru319.github.io/trip/" class="btn btn-primary">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mt-3">
+                <a href="content.html" class="btn btn-outline-primary">もっと見る</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="container text-center mt-5 py-3">
+        <p>&copy; 2024 R316. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
